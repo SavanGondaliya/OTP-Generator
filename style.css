@@ -19,11 +19,11 @@ html,body{
     flex-direction: column;
     align-items: center;
     background: #333;
-    width: 400px;
+    width: 350px;
     height: 400px;
     border-radius: 10px;
-    display: none;
     box-shadow: 0px 10px 70px 10px black;
+    margin: 50px;
 }
 input
 {
@@ -39,22 +39,43 @@ input
     width: 400px;
     height: 100px;
     background: #333;
-    box-shadow: 0px 10px 70px 10px black;
     border-radius: 10px;
+    margin-bottom: 30px;
     position: relative;
-    top: -30%;
 }
 .Verifier
 {
-    position: absolute;   
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background: #333;
-    width: 400px;
+    width: 300px;
     height: 400px;
     border-radius: 10px;
-    box-shadow: 0px 10px 70px 10px black;
-    bottom: 10%;
+    box-shadow: 0px 10px 70px 10px #333;    
+    display: none;
+}
+h1
+{
+    color: wheat;
+    font-size: 24px;
+    text-align: center;
+    margin: 30px;
+}
+#Login_message
+{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    background: wheat;
+    color: #333;
+    box-shadow: 10px 10px 60px 0px #333;
+    display: none;
+}
+#Login_message > h1
+{
+    color: #333;
+    padding: 15% 0% 0% 0%;
 }

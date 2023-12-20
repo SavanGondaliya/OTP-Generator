@@ -9,18 +9,21 @@
 </head>
 <body>
     <main class="container">
-        <div class="display" id="OTP">
-            
+        <div class="display" id="display">
+            <h1 id="OTP">OTP Will Be Display Here !</h1>
         </div>
-        <form action="" method="get" class="form" >
+        <section class="form" id="form">
                 <input type="text" placeholder="User Name" max="10" id="userName" required><br><br>
                 <input type="number" placeholder="Mobile Number" id="Mobile_number" required><br><br>
-                <button class="btn btn-success" onclick="Generate_otp()">Generate OTP</button>
-            </form>
-            <form action="" class="Verifier">
-                <input type="number" placeholder="Enter The OTP" required><br><br>
-                <button class="btn btn-success">Verify</button>
-            </form>
+                <button class="btn btn-success" onclick="Parent()">Generate OTP</button>
+            </section>
+            <section class="Verifier" id="Verifier">
+                <input type="number" id="confirm" placeholder="Enter The OTP" style="text-align: center;" required><br><br>
+                <button class="btn btn-success" onclick="Verify()">Verify</button>
+            </section>
+            <section id="Login_message">
+                <h1>Login successFully!</h1>
+            </section>
         </main>
     <script src="main.js"></script>
 </body>
