@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="E:\OTP_Generator\bootstrap\bootstrap-4.0.0\dist\css\bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="E:\OTP_Generator\bootstrap\bootstrap-4.0.0\dist\css\bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>OTP Generator</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <div class="display" id="display">
-            <h1 id="OTP">OTP Will Be Display Here !</h1>
-        </div>
-        <section class="form" id="form">
-                <input type="text" placeholder="User Name" max="10" id="userName" required><br><br>
-                <input type="number" placeholder="Mobile Number" id="Mobile_number" required><br><br>
-                <button class="btn btn-success" onclick="Parent()">Generate OTP</button>
-            </section>
-            <section class="Verifier" id="Verifier">
-                <input type="number" id="confirm" placeholder="Enter The OTP" style="text-align: center;" required><br><br>
-                <button class="btn btn-success" onclick="Verify()">Verify</button>
-            </section>
-            <section id="Login_message">
-                <h1>Login successFully!</h1>
-            </section>
-        </main>
+      <div class="display" id="display">
+        <h1 id="OTP">OTP Will Be Display Here !</h1>
+      </div>
+      <section class="form" id="form">
+        <input
+          type="text"
+          placeholder="User Name"
+          max="10"
+          id="userName"
+          required
+        /><br /><br />
+        <input
+          type="number"
+          placeholder="Mobile Number"
+          id="Mobile_number"
+          required
+        /><br /><br />
+        <button class="btn btn-success" onclick="Parent()">Generate OTP</button>
+      </section>
+      <section class="Verifier" id="Verifier">
+        <input
+          type="number"
+          id="confirm"
+          placeholder="Enter The OTP"
+          style="text-align: center"
+          required
+        /><br /><br />
+        <button class="btn btn-success" onclick="Verify()">Verify</button>
+      </section>
+      <section id="Login_message">
+        <h1>Login successFully!</h1>
+      </section>
+    </main>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
