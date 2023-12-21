@@ -3,8 +3,8 @@ function Parent(){
     ChangeOver();
 }
 
+let otp = '';
 function Generate_otp(length){
-    let otp = '';
     for(let i=0;i<length;i++){
         let number = Math.floor(Math.random()*10);
         otp += number;
@@ -18,13 +18,12 @@ function ChangeOver()
     document.getElementById('display').style.display = 'block';
 }
 // Verification 
-
 function Verify()
 {
     let OTP = document.getElementById('OTP').value;
     let confirm = document.getElementById('confirm').value;
     
-    if(OTP === confirm)
+    if(otp === confirm)
     {
         document.getElementById('Login_message').style.display = 'block';
         document.getElementById('Verifier').style.display = 'none';
@@ -32,6 +31,6 @@ function Verify()
     }
     else
     {
-        return false;       
+        return false;
     }
 }
